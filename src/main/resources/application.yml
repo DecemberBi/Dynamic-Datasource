@@ -1,5 +1,17 @@
 mybatis:
   mapper-locations: classpath:mybatis/*.xml
 
+datasource:
+  master:
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driverClass: com.mysql.cj.jdbc.Driver
+  readonly:
+    url: jdbc:mysql://127.0.0.1:3306/test1?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driverClass: com.mysql.cj.jdbc.Driver
+
 server:
   port: 8081
